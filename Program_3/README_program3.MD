@@ -1,101 +1,6 @@
 ### 🌐 Language Selection | Выбор языка | Wybór języka
 
-#### 📊 Program 1: Average Salary Analysis by Cities | Анализ средней зарплаты по городам | Analiza średnich wynagrodzeń w miastach
-
-<details>
-<summary>Русский</summary>
-Эта программа на Python анализирует данные о зарплатах по городам с использованием библиотеки pandas. Она загружает данные из CSV файла, группирует их по столбцу "City", вычисляет средние значения зарплат для каждого города и отображает результат.
-
-**Используемые библиотеки:**
-- pandas
-
-**Ключевые шаги:**
-1. Импортирование библиотеки pandas.
-2. Загрузка данных из CSV файла.
-3. Группировка данных по городам и расчет средней зарплаты.
-4. Отображение результатов.
-</details>
-
-<details>
-<summary>English</summary>
-This Python program analyzes salary data by cities using the pandas library. It loads data from a CSV file, groups it by the "City" column, calculates the average salary for each city, and displays the result.
-
-**Libraries used:**
-- pandas
-
-**Key steps:**
-1. Importing the pandas library.
-2. Loading data from a CSV file.
-3. Grouping data by city and calculating the average salary.
-4. Displaying the results.
-</details>
-
-<details>
-<summary>Polski</summary>
-Ten program w języku Python analizuje dane dotyczące wynagrodzeń w miastach za pomocą biblioteki pandas. Ładuje dane z pliku CSV, grupuje je według kolumny "City", oblicza średnie wynagrodzenie dla każdego miasta i wyświetla wynik.
-
-**Używane biblioteki:**
-- pandas
-
-**Kluczowe kroki:**
-1. Importowanie biblioteki pandas.
-2. Ładowanie danych z pliku CSV.
-3. Grupowanie danych według miasta i obliczanie średniego wynagrodzenia.
-4. Wyświetlanie wyników.
-</details>
-
----
-
-#### 🛒 Program 2: Translation and Analysis of E-commerce Product Data | Перевод и анализ данных о продуктах электронной коммерции | Tłumaczenie i analiza danych o produktach e-commerce
-
-<details>
-<summary>Русский</summary>
-Этот проект включает скрипты на Python для обработки и перевода данных из CSV-файла с информацией о продуктах электронной коммерции. Скрипты загружают данные, переводят названия колонок и значений, а также выводят ключевую информацию и статистические описания набора данных.
-
-**Используемые библиотеки:**
-- pandas
-
-**Ключевые шаги:**
-1. Импортирование библиотеки pandas.
-2. Загрузка данных из CSV файла.
-3. Перевод названий колонок и значений.
-4. Сохранение переведенного DataFrame в новый CSV файл.
-5. Анализ данных: вывод ключевой информации и статистического описания.
-</details>
-
-<details>
-<summary>English</summary>
-This project includes Python scripts for processing and translating data from a CSV file containing e-commerce product information. The scripts load the data, translate column names and values, and output key information and statistical descriptions of the dataset.
-
-**Libraries used:**
-- pandas
-
-**Key steps:**
-1. Importing the pandas library.
-2. Loading data from a CSV file.
-3. Translating column names and values.
-4. Saving the translated DataFrame to a new CSV file.
-5. Analyzing data: displaying key information and statistical descriptions.
-</details>
-
-<details>
-<summary>Polski</summary>
-Ten projekt zawiera skrypty w języku Python do przetwarzania i tłumaczenia danych z pliku CSV zawierającego informacje o produktach e-commerce. Skrypty ładują dane, tłumaczą nazwy kolumn i wartości, a także wyświetlają kluczowe informacje i opisy statystyczne zbioru danych.
-
-**Używane biblioteki:**
-- pandas
-
-**Kluczowe kroki:**
-1. Importowanie biblioteki pandas.
-2. Ładowanie danych z pliku CSV.
-3. Tłumaczenie nazw kolumn i wartości.
-4. Zapis przetłumaczonego DataFrame do nowego pliku CSV.
-5. Analiza danych: wyświetlanie kluczowych informacji i opisów statystycznych.
-</details>
-
----
-
-#### 🛴 Program 3: Electric Scooter Data Analysis | Анализ данных по электрическим самокатам | Analiza danych hulajnóg elektrycznych
+#### 📊 Программа: Анализ данных по электрическим самокатам | Electric Scooter Data Analysis | Analiza danych hulajnóg elektrycznych
 
 <details>
 <summary>Русский</summary>
@@ -165,3 +70,67 @@ Ten program w języku Python analizuje i wyświetla różne statystyki dla róż
 5. Obliczenie średniej, mediany i odchylenia standardowego dla każdego numerycznego parametru.
 6. Wyświetlenie szczegółowego podsumowania statystycznego.
 </details>
+
+
+
+### Пример кода | Code Example | Przykład kodu
+
+```python
+import pandas as pd
+
+# Данные
+data = {
+    "Модель Двухколёсного Электрика": [
+        "BLADE F8 Plus+", "NIU UQi GT2", "CityCoco Black Sea", "Pulse X7 Pro", "Pulse Mini-7.1",
+        "Pulse X1", "CityCoCo X12 PRO NEW", "WS-LIGHT 1200W", "PULSE XC-1", "ALPHA CHAMP",
+        "Ikingi CP9 3000W", "CityCoco X2 Pro", "CityCoCo X7 PRO 3000W", "CityCoCo GT X11",
+        "Ikingi M6 PRO", "Ikingi M9 Pro", "CityCoCo GT X5"
+    ],
+    "Цена (руб)": [
+        240000, 249000, 125000, 160000, 80000, 110000, 180000, 95000, 75000, 135000,
+        170000, 140000, 165000, 200000, 220000, 150000, 130000
+    ],
+    "Батарея Вольт (V)": [
+        72, 48, 60, 60, 48, 60, 60, 48, 48, 60, 72, 60, 60, 60, 72, 72, 60
+    ],
+    "Ёмкость батареи (Ah)": [
+        50, 31, 25, 20, 12, 20, 40, 15, 10, 24, 20, 30, 40, 50, 35, 20, 30
+    ],
+    "Мощность (W)": [
+        3500, 1500, 2000, 2000, 1000, 2000, 3000, 1200, 500, 1000, 3000, 1000, 3000, 3000, 4000, 2000, 1200
+    ]
+}
+
+# Создание DataFrame
+df = pd.DataFrame(data)
+
+# Сохранение DataFrame в CSV файл
+file_path_csv = "electric_scooters.csv"
+df.to_csv(file_path_csv, index=False)
+
+# Отображение первых 4 строк
+first_4_rows = df.head(4)
+print("Первые 4 строки DataFrame:")
+print(first_4_rows)
+
+# Вычисление средних значений для каждого параметра
+mean_values = df.mean(numeric_only=True)
+print("\nСредние значения для каждого параметра:")
+print(mean_values)
+
+# Вычисление медианных значений для каждого параметра
+median_values = df.median(numeric_only=True)
+print("\nМедианные значения для каждого параметра:")
+print(median_values)
+
+# Вычисление стандартного отклонения для каждого параметра
+std_deviation_values = df.std(numeric_only=True)
+print("\nСтандартное отклонение для каждого параметра:")
+print(std_deviation_values)
+
+# Основные статистические показатели для каждого параметра
+statistics_df = df.describe()
+print("\nОсновные статистические показатели для каждого параметра:")
+print(statistics_df)
+```
+
