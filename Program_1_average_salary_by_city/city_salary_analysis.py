@@ -11,5 +11,5 @@ data_cleaned = data.dropna(subset=['City'])
 average_salary_by_city = data_cleaned.groupby('City')['Salary'].mean().reset_index()
 
 # Сохранение результатов
-output_path = 'average_salary_by_city.csv'
+output_path = 'Program_1_average_salary_by_city.csv'
 average_salary_by_city.to_csv(output_path, index=False)
