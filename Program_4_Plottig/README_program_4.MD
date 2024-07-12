@@ -107,7 +107,7 @@ python app.py
 
 ### Пример сохраненного HTML графика
 
-[Посмотреть интерактивный график](https://github.com/YZenia/Pandas-Data-Analysis/blob/main/Program_4_Plottig/saved_graphs/combined_plot_1.html)
+[Посмотреть интерактивный график](https://github.com/YZenia/Pandas-Data-Analysis/main/Program_4_Plottig/saved_graphs/combined_plot_1.html)
 
 ### Пример сохраненного PNG графика
 ![PNG Example](saved_graphs/combined_plot_1.png)
