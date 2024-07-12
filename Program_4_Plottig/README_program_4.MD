@@ -1,132 +1,81 @@
-# Электроскутеры Анализ - Dash Приложение
+Certainly! Here's a comprehensive description for the repository, including an example of the complex combined analysis graph and static comparisons. We'll also reference the example images you've mentioned.
 
-Это приложение Dash позволяет анализировать данные различных моделей двухколёсных электроскутеров. Приложение предоставляет интерактивные графики, которые можно сохранять как HTML и изображения.
+### Repository Description
 
-## Установка
+---
 
-1. Клонируйте репозиторий:
+# Two-Wheeled Electric Vehicle Analysis Dashboard
 
+This repository contains a Dash-based web application for analyzing and visualizing data on various models of two-wheeled electric vehicles. The application provides an interactive interface for comparing different models based on various parameters such as price, battery capacity, voltage, and power. Users can also save the generated graphs as HTML files for further use.
+
+## Features
+
+- **Interactive Graphs**: Compare different models using interactive scatter plots, box plots, and bar charts.
+- **Customizable Views**: Select specific models to highlight and compare.
+- **Statistical Analysis**: View detailed statistical analysis, including mean, median, standard deviation, and quartiles.
+- **Save Graphs**: Save the generated graphs as HTML files for later use.
+
+## Example Graphs
+
+### Complex Combined Analysis
+
+![Complex Combined Analysis](Program_4_Plottig/saved_graphs/example_dataset_1plot.jpg)
+
+### Static Comparison - Price
+
+![Static Comparison - Price](Program_4_Plottig/saved_graphs/example_static_1plot.jpg)
+
+## Installation
+
+1. Clone the repository:
     ```sh
-    git clone https://github.com/ваш_пользователь_на_github/electric-scooter-analysis.git
+    git clone https://github.com/yourusername/two-wheeled-electric-vehicle-analysis.git
+    cd two-wheeled-electric-vehicle-analysis
     ```
 
-2. Перейдите в директорию проекта:
-
+2. Install the required dependencies:
     ```sh
-    cd electric-scooter-analysis
+    pip install dash pandas plotly
     ```
 
-3. Создайте виртуальное окружение и активируйте его:
-
+3. Run the application:
     ```sh
-    python -m venv venv
-    source venv/bin/activate  # Для Windows используйте `venv\Scripts\activate`
+    python app.py
     ```
 
-4. Установите необходимые зависимости:
+4. Open your web browser and navigate to `http://127.0.0.1:8050/`.
 
-    ```sh
-    pip install -r requirements.txt
-    ```
+## Usage
 
-## Запуск приложения
+- **Select Models**: Use the checklist on the left to select specific models for comparison.
+- **Save Graphs**: Click the "Сохранить графики как HTML" button to save the current view of the graph as an HTML file.
+- **View Statistics**: Switch between different tabs to view statistical analyses of different parameters like price, battery capacity, power, and voltage.
 
-Для запуска приложения выполните следующую команду:
+## File Structure
 
-```sh
-python app.py
+- `app.py`: The main application script.
+- `saved_graphs/`: Directory where saved HTML graph files will be stored.
+- `Program_4_Plottig/saved_graphs/example_dataset_1plot.jpg`: Example image of a complex combined analysis graph.
+- `Program_4_Plottig/saved_graphs/example_static_1plot.jpg`: Example image of a static comparison graph for price.
 
-To include an interactive example of your graph in the description of your GitHub repository, you can provide a link to the saved HTML file. Unfortunately, GitHub's Markdown does not support rendering HTML files directly within the README. However, you can upload the HTML file to a publicly accessible location (such as GitHub Pages) and link to it.
+## Contributing
 
-Here's how you can do it:
+Feel free to submit issues, fork the repository and send pull requests. Contributions are welcome!
 
-1. **Upload the HTML file to your repository**:
-   - Place the `combined_plot_1.html` file in your repository. You might put it in a directory like `examples/`.
+## License
 
-2. **Create a GitHub Pages site**:
-   - Enable GitHub Pages for your repository by going to the repository settings.
-   - Under the "GitHub Pages" section, select the branch you want to serve the pages from (typically `main` or `gh-pages`).
-   - Choose the root directory or a specific directory (e.g., `/docs`) to serve the content.
+This project is licensed under the MIT License.
 
-3. **Link to the HTML file in your README**:
-   - Update your `README.md` to include a link to the HTML file. If you have enabled GitHub Pages and placed the file in the `examples/` directory, the link might look something like this: `https://username.github.io/repository-name/examples/combined_plot_1.html`.
+---
 
-Here's an example of what your `README.md` might look like:
+### Instructions
 
-```markdown
-# Электроскутеры Анализ - Dash Приложение
+1. Save the above text into a file named `README.md` in the root directory of your repository.
+2. Place the example images (`example_dataset_1plot.jpg` and `example_static_1plot.jpg`) in the specified directory (`Program_4_Plottig/saved_graphs/`).
+3. Ensure all the necessary files (`app.py`, `requirements.txt` if needed) are in place.
 
-Это приложение Dash позволяет анализировать данные различных моделей двухколёсных электроскутеров. Приложение предоставляет интерактивные графики, которые можно сохранять как HTML и изображения.
+### Example Graph Images
 
-## Установка
+The repository should contain these example images in the correct directory to illustrate the application's output in the README.
 
-1. Клонируйте репозиторий:
-
-    ```sh
-    git clone https://github.com/ваш_пользователь_на_github/electric-scooter-analysis.git
-    ```
-
-2. Перейдите в директорию проекта:
-
-    ```sh
-    cd electric-scooter-analysis
-    ```
-
-3. Создайте виртуальное окружение и активируйте его:
-
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # Для Windows используйте `venv\Scripts\activate`
-    ```
-
-4. Установите необходимые зависимости:
-
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-## Запуск приложения
-
-Для запуска приложения выполните следующую команду:
-
-```sh
-python app.py
-```
-
-Приложение будет доступно по адресу `http://127.0.0.1:8050/`.
-
-## Использование
-
-1. **Выбор моделей**: Выберите модели скутеров с помощью чекбоксов в левой части экрана.
-2. **Интерактивные графики**: Исследуйте различные графики, такие как вольтаж, цена против ёмкости батареи, цена против мощности и boxplot для цены.
-3. **Сохранение графиков**:
-    - Нажмите кнопку "Сохранить графики как HTML" для сохранения текущего графика в виде HTML-файла.
-    - Нажмите кнопку "Сохранить графики как изображение" для сохранения текущего графика в виде PNG-изображения.
-
-## Примеры графиков
-
-### Пример сохраненного HTML графика
-
-[Посмотреть интерактивный график](https://username.github.io/repository-name/examples/combined_plot_1.html)
-
-### Пример сохраненного PNG графика
-![PNG Example](saved_graphs/combined_plot_1.png)
-
-## Зависимости
-
-- pandas
-- plotly
-- dash
-- kaleido
-- pillow
-
-Эти зависимости указаны в файле `requirements.txt`.
-
-## Лицензия
-
-Этот проект лицензируется под лицензией MIT.
-```
-
-Replace `https://username.github.io/repository-name/examples/combined_plot_1.html` with the actual URL where your HTML file is hosted. 
-
-By following these steps, you provide a clear and interactive example of your graph directly in the repository's README.
+With these steps completed, your repository will have a comprehensive description, including example visuals to help users understand the application's functionality and usage.

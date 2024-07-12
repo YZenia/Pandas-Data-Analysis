@@ -296,7 +296,7 @@ def save_figure_as_html(n_clicks, figure):
     if n_clicks > 0:
         if not os.path.exists('saved_graphs'):
             os.makedirs('saved_graphs')
-        file_path = f'saved_graphs/combined_plot_{n_clicks}.html'
+        file_path = os.path.join('saved_graphs', f'combined_plot_{n_clicks}.html')
         pio.write_html(figure, file=file_path)
         print(f"Графики сохранены как {file_path}")
     return 0
@@ -310,9 +310,13 @@ def save_figure_as_image(n_clicks, figure):
     if n_clicks > 0:
         if not os.path.exists('saved_graphs'):
             os.makedirs('saved_graphs')
-        file_path = f'saved_graphs/combined_plot_{n_clicks}.png'
-        pio.write_image(figure, file=file_path)
-        print(f"Графики сохранены как {file_path}")
+        file_path = os.path.join('saved_graphs', f'combined_plot_{n_clicks}.png')
+        try:
+            fig = go.Figure(figure)
+            pio.write_image(fig, file=file_path, format='png', engine='kaleido')
+            print(f"Графики сохранены как {file_path}")
+        except Exception as e:
+            print(f"Ошибка при сохранении графика: {e}")
     return 0
 
 if __name__ == '__main__':
