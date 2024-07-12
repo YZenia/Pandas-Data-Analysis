@@ -63,7 +63,7 @@ Here's an example of what your `README.md` might look like:
 1. Клонируйте репозиторий:
 
     ```sh
-    git clone https://github.com/ваш_пользователь_на_github/electric-scooter-analysis.git
+    git clone https://github.com/Program_4_Plottig/saved_graphs/combined_plot_1.html
     ```
 
 2. Перейдите в директорию проекта:
