@@ -1,5 +1,3 @@
-### 🌐 Language Selection | Выбор языка | Wybór języka
-
 #### 📊 Program 1: Average Salary Analysis by Cities | Анализ средней зарплаты по городам | Analiza średnich wynagrodzeń w miastach
 
 <details>
