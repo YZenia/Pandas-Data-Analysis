@@ -209,7 +209,7 @@ This repository contains a Dash-based web application for analyzing and visualiz
 
 ### Static Comparison - Price
 
-![Static Comparison - Price](.../Program_4_Plottig/saved_graphs/example_static_1plot.jpg)
+![Static Comparison - Price](./Program_4_Plottig/saved_graphs/example_static_1plot.jpg)
 
 **[Instructions in the Program_4_Plotting Folder](./Program_4_Plottig/README_program_4.MD)**
 </details>
