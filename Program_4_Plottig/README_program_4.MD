@@ -19,7 +19,7 @@ This repository contains a Dash-based web application for analyzing and visualiz
 
 ### Complex Combined Analysis
 
-![Complex Combined Analysis](https://github.com/YZenia/Pandas-Data-Analysis/blob/main/Program_4_Plottig/saved_graphs/example_dataset_1plot.jpg?raw=true)
+![Complex Combined Analysis](Program_4_Plottig/saved_graphs/example_dataset_1plot.jpg)
 
 ### Static Comparison - Price
 

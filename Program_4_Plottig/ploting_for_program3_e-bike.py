@@ -239,8 +239,7 @@ app.layout = html.Div([
             value=[],
             labelStyle={'display': 'block', 'backgroundColor': 'black', 'padding': '5px'}
         ),
-        html.Button('Сохранить графики как HTML', id='save-html-button', n_clicks=0),
-        html.Button('Сохранить графики как изображение', id='save-image-button', n_clicks=0)
+        html.Button('Сохранить графики как HTML', id='save-html-button', n_clicks=0)
     ], style={'width': '20%', 'display': 'inline-block', 'verticalAlign': 'top', 'backgroundColor': 'black',
               'padding': '20px'}),
     html.Div([
@@ -299,24 +298,6 @@ def save_figure_as_html(n_clicks, figure):
         file_path = os.path.join('saved_graphs', f'combined_plot_{n_clicks}.html')
         pio.write_html(figure, file=file_path)
         print(f"Графики сохранены как {file_path}")
-    return 0
-
-@app.callback(
-    Output('save-image-button', 'n_clicks'),
-    [Input('save-image-button', 'n_clicks')],
-    [State('scatter-plot', 'figure')]
-)
-def save_figure_as_image(n_clicks, figure):
-    if n_clicks > 0:
-        if not os.path.exists('saved_graphs'):
-            os.makedirs('saved_graphs')
-        file_path = os.path.join('saved_graphs', f'combined_plot_{n_clicks}.png')
-        try:
-            fig = go.Figure(figure)
-            pio.write_image(fig, file=file_path, format='png', engine='kaleido')
-            print(f"Графики сохранены как {file_path}")
-        except Exception as e:
-            print(f"Ошибка при сохранении графика: {e}")
     return 0
 
 if __name__ == '__main__':

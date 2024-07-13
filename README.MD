@@ -165,3 +165,77 @@ Ten program w języku Python analizuje i wyświetla różne statystyki dla róż
 5. Obliczenie średniej, mediany i odchylenia standardowego dla każdego numerycznego parametru.
 6. Wyświetlenie szczegółowego podsumowania statystycznego.
 </details>
+
+---
+
+#### 📊 Program 4: Plotting | Построения графиков | Budowa wykresow
+
+<details>
+<summary>Русский</summary>
+Это репозиторий содержит веб-приложение на базе Dash для анализа и визуализации данных по различным моделям двухколёсных электрических транспортных средств. Приложение предоставляет интерактивный интерфейс для сравнения различных моделей на основе таких параметров, как цена, ёмкость батареи, напряжение и мощность. Пользователи также могут сохранять сгенерированные графики в формате HTML для дальнейшего использования.
+
+**Возможности:**
+- **Интерактивные графики**: Сравнение различных моделей с помощью интерактивных точечных графиков, диаграмм размаха и столбчатых диаграмм.
+- **Настраиваемые представления**: Выбор конкретных моделей для выделения и сравнения.
+- **Статистический анализ**: Просмотр подробного статистического анализа, включая среднее значение, медиану, стандартное отклонение и квартили.
+- **Сохранение графиков**: Сохранение сгенерированных графиков в формате HTML для последующего использования.
+
+**Примеры графиков:**
+
+### Сложный комбинированный анализ
+
+![Сложный комбинированный анализ](./Program_4_Plottig/saved_graphs/example_dataset_1plot.jpg)
+
+### Статическое сравнение - цена
+
+![Статическое сравнение - цена](./Program_4_Plottig/saved_graphs/example_static_1plot.jpg)
+**[Инструкция в папке Program_4_Plotting](./Program_4_Plottig/README_program_4.MD)**
+</details>
+
+
+<details>
+<summary>English</summary>
+This repository contains a Dash-based web application for analyzing and visualizing data on various models of two-wheeled electric vehicles. The application provides an interactive interface for comparing different models based on various parameters such as price, battery capacity, voltage, and power. Users can also save the generated graphs as HTML files for further use.
+
+**Features:**
+- **Interactive Graphs**: Compare different models using interactive scatter plots, box plots, and bar charts.
+- **Customizable Views**: Select specific models to highlight and compare.
+- **Statistical Analysis**: View detailed statistical analysis, including mean, median, standard deviation, and quartiles.
+- **Save Graphs**: Save the generated graphs as HTML files for later use.
+
+**Example Graphs:**
+
+### Complex Combined Analysis
+
+![Complex Combined Analysis](./Program_4_Plottig/saved_graphs/example_dataset_1plot.jpg)
+
+### Static Comparison - Price
+
+![Static Comparison - Price](.../Program_4_Plottig/saved_graphs/example_static_1plot.jpg)
+
+**[Instructions in the Program_4_Plotting Folder](./Program_4_Plottig/README_program_4.MD)**
+</details>
+
+<details>
+<summary>Polski</summary>
+To repozytorium zawiera aplikację internetową opartą na Dash do analizowania i wizualizacji danych dotyczących różnych modeli dwukołowych pojazdów elektrycznych. Aplikacja zapewnia interaktywny interfejs do porównywania różnych modeli na podstawie różnych parametrów, takich jak cena, pojemność baterii, napięcie i moc. Użytkownicy mogą również zapisywać wygenerowane wykresy jako pliki HTML do dalszego użytku.
+
+**Funkcje:**
+- **Interaktywne wykresy**: Porównywanie różnych modeli za pomocą interaktywnych wykresów punktowych, wykresów pudełkowych i wykresów słupkowych.
+- **Dostosowywane widoki**: Wybór konkretnych modeli do wyróżnienia i porównania.
+- **Analiza statystyczna**: Wyświetlanie szczegółowej analizy statystycznej, w tym średniej, mediany, odchylenia standardowego i kwartylów.
+- **Zapisywanie wykresów**: Zapisywanie wygenerowanych wykresów jako plików HTML do późniejszego użytku.
+
+**Przykłady wykresów:**
+
+### Złożona analiza kombinowana
+
+![Złożona analiza kombinowana](./Program_4_Plottig/saved_graphs/example_dataset_1plot.jpg)
+
+### Statyczne porównanie - cena
+
+![Statyczne porównanie - cena](./Program_4_Plottig/saved_graphs/example_static_1plot.jpg)
+
+**[Instrukcja w folderze Program_4_Plotting](./Program_4_Plottig/README_program_4.MD)**
+
+</details>
